@@ -1,0 +1,51 @@
+<html>
+<head>
+<style>
+body {
+background: #410;
+background: linear-gradient(180deg, #410 45%, #461202 100%);
+color: #410;
+font-size: 18px;
+padding: 50px;
+text-align: center;
+font-family: "Domine", serif;
+}
+
+.title {
+color: #742;
+display: inline-block;
+padding: 30px;
+border: 1px solid #742;
+font-size: 44px;
+font-weight: bold;
+margin: 0 0 15px;
+position: relative;
+top: 40%;
+}
+
+</style>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Domine:wght@400..700&family=M+PLUS+Code+Latin:wght@100..700&display=swap" rel="stylesheet">
+</head>
+<body>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-GKC4EJY5JR"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-GKC4EJY5JR');
+</script>
+<div class="title">forage here</div>
+<div class="subtitle" id="count"></div>
+<script>
+var c = document.getElementById('count');
+var current = parseInt(localStorage.getItem('count') || 0);
+current += 1;
+c.innerText = current;
+localStorage.setItem('count', current);
+</script>
+</body>
+</html>
